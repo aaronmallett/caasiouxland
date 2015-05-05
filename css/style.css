@@ -96,6 +96,7 @@ ul#social li a  {
 	margin-top: -10px;
 }
 
+/*search box in top right corner*/
 form#hdr-search {
   margin-bottom: 0;
   padding: 0 0 15px 0;
@@ -196,11 +197,12 @@ ul.main-nav li a {
 .dropdown,
 .flyout {
   position: relative;
+  z-index: 20;          /*this is working with hover below*/
 }
 
 li.dropdown:hover {
 	background: rgba(255,255,255,.1); /*just the first li in the dropdown or is it main-nav li that is first child*/
-	
+	  z-index: 21;
 }
 
 .dropdown:hover	li {	
@@ -283,7 +285,7 @@ ul.main-nav li ul li:hover {
  	float: left;
  	margin-bottom: 20px;
  	margin-top: 15px;
- 	margin-right: 30px;	
+ 	margin-right: 10px;	
 }
 
 #content #hero-left img	{  /*this works - photo needs to be 100% of the parent container as it sizes down*/
@@ -330,7 +332,7 @@ ul.main-nav li ul li:hover {
 	font-weight: bold;
 
 }
-/*-------break across after the slideshow or hero area---------*/
+/*-------blue break across after hero area---------*/
 
 article#story-intro	{
 	background: #314c66;
@@ -525,6 +527,48 @@ footer#footer  {
 	clear: right;
 }
 
+/*appointment form*/
+#app-form {
+	width: 425px;
+	margin-top: 10px;
+	float: left;
+}
+
+#app-form input, #app-form textarea {
+	padding: 5px;
+	width: 250px;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.2em;
+	margin: 5px 0px 5px 0px;
+	border: 2px solid #ccc;
+}
+
+#app-form textarea {
+	height: 90px;
+}
+
+#app-form textarea:focus, #app-form input:focus {
+	border: 2px solid #900;
+}
+
+#app-form input.submit-button {
+	width: 100px;
+	float: right;
+}
+
+#app-form input.reset-button {
+	width: 120px;
+	float: left;
+}
+
+label {
+	float: left;
+	text-align: right;
+	margin-right: 15px;
+	width: 100px;
+	padding-top: 5px;
+	font-size: 1em;
+}
 
 
 
