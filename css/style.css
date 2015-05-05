@@ -1,0 +1,531 @@
+  @charset "UTF-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Include the Eric Meyer reset for the browsers to behave as similarly as they can.
+*/
+/*font-family: 'Racing Sans One', cursive; use for big fact-text */
+/*font-family: 'Open Sans', sans-serif possible switch for body text;
+*/
+body { font-family: Arial, Helvetica, sans-serif; 
+		background: #fff;
+		position: relative;
+		color: #314c66;   /*caaSiouxland's blue, red is #a00049, but use #8C0229 not so pink */
+		font-size: 16px;
+		line-height: 1.2em;
+} 
+
+#main 	{background: background: #fcfcfc; 
+
+}
+
+ul#social	{
+			background: -moz-linear-gradient(top,  rgba(140,2,41,1) 0%, rgba(248,241,243,0.18) 83%, rgba(255,255,255,0.13) 88%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(140,2,41,1)), color-stop(83%,rgba(248,241,243,0.18)), color-stop(88%,rgba(255,255,255,0.13)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(140,2,41,1) 0%,rgba(248,241,243,0.18) 83%,rgba(255,255,255,0.13) 88%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(140,2,41,1) 0%,rgba(248,241,243,0.18) 83%,rgba(255,255,255,0.13) 88%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(140,2,41,1) 0%,rgba(248,241,243,0.18) 83%,rgba(255,255,255,0.13) 88%,rgba(255,255,255,0) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(140,2,41,1) 0%,rgba(248,241,243,0.18) 83%,rgba(255,255,255,0.13) 88%,rgba(255,255,255,0) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c0229', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+			height: 45px;
+			/*display: block;*/
+			width: 100%;
+			padding-top: 14px;
+}
+
+ul#social li {
+	list-style:;
+	float:right;
+	padding:  20px 10px 15px 10px;
+}
+ul#social li a  {
+	color: #8C0229;      /*caas red*/
+	margin-top: 10px;
+  	display: block;
+}
+
+#social i.fa   {
+	margin-top: -10px;
+}
+
+form#hdr-search {
+  margin-bottom: 0;
+  padding: 0 0 15px 0;
+}
+
+ul#social li form input 	{
+	color: #8C0229;    /*or blue #314c66*/
+	padding-top: 7px;
+	margin-top: 5px;
+}
+
+input.form-control	{
+  float: left;
+  border-radius: 5px 0 0 5px;
+  border-color: rgba(0,0,0,.3);
+  border-right: none;
+  width: 150px;
+}
+
+form#hdr-search button {
+	border-radius: 0 5px 5px 0;
+	background: #747474;
+	border-color: rgba(0,0,0,.1);
+	box-shadow: inset 0 15px 10px -5px rgba(255,255,255,.4);
+	padding: 0;
+	height: 25px;
+	margin-top: 5px;
+	width: 60px;
+}
+
+#header	{
+	width: 100%;
+	margin-top: 55px;	
+	position: relative;
+}
+
+#header h1 {
+	margin-left: -9999px;
+}
+
+#menuBar	{
+	background: #314c66;  /*caas blue*/
+	height: 80px;
+	margin-top: -55px;
+	width: 100%;
+	position: relative;
+} 
+
+.container {  
+	width: 85%;  /*1280px*/
+	margin: 0 auto; 
+		 
+}
+
+img#logo {
+  margin-top: -36px;
+  float: left;
+  width: 378px;
+  height: 138px;
+}
+
+ul.main-nav {
+	list-style: none;	/*to get rid of the bullets*/
+	width: 100%;
+	margin-top: 8px;
+}
+
+ul.main-nav li  {
+	/*border: 1px solid orange;*/
+	padding: 10px 0;
+	position: relative;	
+}
+
+/* > only affects the immediate li children of .main-nav, not others that are nested further in.*/
+ul.main-nav > li {                /*these are the blue bar li's*/
+	width: 130px;
+ 	padding: 20px 5px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 0px;
+	height: 40px;
+	/*border: 1px solid orange;*/	
+
+}
+ul.main-nav li a {
+    color: #FFF;
+    display: block;
+    padding: 10px 0; 
+    text-decoration: none;	
+}
+.main-nav li.right-nav {
+	float: right;
+	width: 80px;
+}
+
+/*for dropdown*/
+.dropdown,
+.flyout {
+  position: relative;
+}
+
+li.dropdown:hover {
+	background: rgba(255,255,255,.1); /*just the first li in the dropdown or is it main-nav li that is first child*/
+	
+}
+
+.dropdown:hover	li {	
+  background: rgb(204,204,204);    /* rgba(255,255,255,.7) #8C0229*/
+  display: block;
+  height: 40px;
+  margin-left: 20px;
+}
+
+.dropdown:hover a {
+	line-height: 1em;
+	/*background: rgb(49,76,102);*/
+}
+
+.dropdown:hover li > a  {
+	color: #314c66;
+}
+
+.dropdown:after {   /*this is the little triangle icon*/
+  content: "\25BC";
+  font-size: .7em;
+  display: block;
+  position: absolute;
+  top: 30px;      /*was 30%*/
+  right: 5%;
+  color: #FFF;
+}
+
+.drop-nav,
+.flyout-nav {
+  position: absolute;
+  display: none;
+  width: 150px;
+  left: 0;
+}
+
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav {
+  display: block;
+  width: 160px;
+  position: absolute;
+  height: 30px;        /*was 40px*/
+  top: 78px;
+  left: -20px;
+}
+
+.drop-nav li {
+    display: block;
+}
+
+li.dropdown.noTriangle::after {   /* to take away little triangle icon for contact*/
+    content: none;
+}
+
+.flyout-nav {
+  left: 100%;
+  top: 0;
+}
+
+.flyout:hover a,        /*just in case we have to add another sub menu*/
+.flyout-nav {
+  background: rgb(255,255,255);    /*#8C0229*/
+  color: #314c66;
+  display: block;
+}
+
+ul.main-nav li ul li:hover {	 
+  display: block;
+  background: rgb(255,255,255);     /*added*/
+ }
+
+
+.clear	{
+	clear: both;	
+} 
+
+#content #hero-left	{
+	width: 66%;
+ 	/* height: 450px; */
+ 	float: left;
+ 	margin-bottom: 20px;
+ 	margin-top: 15px;
+ 	margin-right: 30px;	
+}
+
+#content #hero-left img	{  /*this works - photo needs to be 100% of the parent container as it sizes down*/
+	width: 100%;
+
+}
+
+#content #hero-right	{
+	width: 30%;	
+	float: left;
+}
+
+#content h3#tagline	{
+	 margin-top: 50px;
+	 margin-bottom: 20px;
+	 font-size: 34px;
+	 color: #8C0229;
+	 line-height: 36px;
+}
+
+/*#content h2 {
+   	font-size: 30px;
+    color: #015878;
+	padding-top: 20px; 
+}*/
+
+#content h4 {
+    font-size: 1.5em;
+    padding-top: 0;
+    padding-right: 20px;
+    line-height: 1.1em;
+    margin-bottom: 0;
+    color: #314c66;
+    font-weight: bold; 
+}
+
+#content p {
+   /* font-size: 1em;
+    padding-top: 20px; */
+	padding-right: 20px;
+}
+
+#content p span  {
+	font-weight: bold;
+
+}
+/*-------break across after the slideshow or hero area---------*/
+
+article#story-intro	{
+	background: #314c66;
+	color: #FFFFFF;
+	text-align: center;
+	margin: -40px auto 0px auto;
+	clear: both;
+	padding: 20px;
+}
+
+article#story-intro h4  {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	/*width: 50%;*/
+	font-weight: bold;
+}
+
+article#story-intro p  {
+	font-size: 1rem;
+	width: 50%;
+	margin: 0 auto 20px auto;
+}
+
+#story-intro a.button-big {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 10px 20px;
+  background: #8C0229;
+  color: #FFF;
+  border: 1px solid #FFF;
+  border-radius: 5px 5px 5px 5px;
+  text-decoration: none;
+}
+
+a.button-small	{
+	font-size: 1em;
+	width: 83px;
+	background: #8C0229;
+	color: #FFF;
+	border: 1px solid #FFF;
+	border-radius: 5px 5px 5px 5px;
+	margin-left: 0;
+}
+.pic {
+	background-size: 100% 100%; /*was auto 100%*/
+	margin: 0 auto;
+	padding: 0;
+/*  width: 100%;*/
+}
+
+/*Retina macbookPro 15" early 2013=
+2880x1800 native resolution @220px
+At home 1205px, not quite full screen
+*/
+
+#pic1 {
+	background: url(../images/fb-food-items2.jpg) no-repeat bottom center;
+	/*width: 100%;*/
+	background-size: 100% 100%;
+	position: relative; /*changed 3 things*/
+	overflow: auto;
+}
+
+#pic2 {
+	background: url(../images/cf-girls-building2.jpg) no-repeat center center;
+	/*width: 100%;*/
+	background-size: 100% 100%;
+	background-position: relative;
+	overflow: hidden;
+}
+
+#pic3 {
+	background: url(../images/furnace-crop2.jpg) no-repeat center center;
+	/*width: 100%;*/
+	background-size: 100% 100%;
+	background-position: relative;
+	overflow: hidden;
+	/*top: -50px;*/
+}
+
+#pic4 {
+	background: url(../images/s-smiling-senior2.jpg) no-repeat top center;
+	/*width: 100%;*/
+	background-size: 100% 100%;
+	background-position: relative;
+	overflow: hidden;
+}
+
+#pic5 {
+	background: url(../images/wh-mom-baby2.jpg) no-repeat top center;
+	/*width: auto;*/
+	background-size: 100% 100%;
+	background-position: relative;
+	overflow: hidden;
+
+}
+
+.fact-text {
+  	width: 30%;
+  	/* overflow: auto; */
+  	background: rgba(49,76,102,0.8);  /*#314c66; blue or black (0,0,0,0.6)*/
+  	margin: 0 30px;
+  	opacity: 1;
+  	color: #FFF;   /*#F0F3EE*/
+  	padding: 15px;
+  	text-align: center;
+  	position: relative;
+}
+
+.left  {
+	margin: 0;
+	position: absolute;
+	left: 0;
+}
+
+.right  {
+	margin: 0;
+	position: absolute;
+	right: 0;
+}
+
+.fact-text p  {
+	color: #FFF;
+  	/*font-weight: 600;*/
+}
+
+.fact-text p:first-child  {
+	text-transform: uppercase;
+}
+
+.fact-text h2 {
+  	font-size: 2em;
+  	text-transform: uppercase;
+  	line-height: 41pt;
+  	overflow: auto;
+/*  	text-shadow: 0px 0px 8px #8C0229;
+*/}
+
+.fact-text h3	{ /*these are the figures*/
+  	color: #fff;  /*#8C0229;*/ /*  #fdb813*/
+  	padding: .5em 0 0 0;
+  	margin: .5em 0 .5em 0;
+  	font-size: 2em;
+  	font-family: 'Prosto One', sans-serif;
+  	border-top: 1px dotted rgb(255,255,255);
+
+	/*below is a darker blue was #314C66*/
+     text-shadow: 
+       3px 3px 0 #263c51,
+      -1px -1px 0 #263c51,  
+       1px -1px 0 #263c51,
+      -1px 1px 0 #263c51,
+       1px 1px 0 #263c51;
+}
+.fact-text p.small-fact	{
+	font-size: 26px;
+	display: inline;
+	/*text-transform: uppercase;*/
+	text-transform: none !important;
+}
+
+.fact-text h3~p	{ /*selects p tags proceeded by h3*/
+	/*color: #FFF;*/
+}
+
+footer#footer  {
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.13) 12%, rgba(248,241,243,0.18) 17%, rgba(140,2,41,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(12%,rgba(255,255,255,0.13)), color-stop(17%,rgba(248,241,243,0.18)), color-stop(100%,rgba(140,2,41,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.13) 12%,rgba(248,241,243,0.18) 17%,rgba(140,2,41,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.13) 12%,rgba(248,241,243,0.18) 17%,rgba(140,2,41,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.13) 12%,rgba(248,241,243,0.18) 17%,rgba(140,2,41,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.13) 12%,rgba(248,241,243,0.18) 17%,rgba(140,2,41,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#8c0229',GradientType=0 ); /* IE6-9 */
+
+	padding: 20px 0 30px 0;
+	color: #314c66;
+	clear: both;
+	/*border: 1px solid gray;*/
+	overflow:auto; /*on the containing div will make everything inside of it (even floated items) visible and the outer div fully wraps around them. stackoverflow */ 
+}
+
+#footer .footer-left p	{
+	float: left;
+	width: 30%;
+	clear: left;
+}
+
+#footer .footer-right p	{
+	float: right;
+	width: 30%;
+	text-align: right;
+	clear: right;
+}
+
+
+
+
+
