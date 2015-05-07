@@ -286,7 +286,7 @@ ul.main-nav li ul li:hover {
  	float: left;
  	margin-bottom: 20px;
  	margin-top: 15px;
- 	margin-right: 10px;	
+ 	margin-right: 40px;
 }
 
 #content #hero-left img	{  /*this works - photo needs to be 100% of the parent container as it sizes down*/
@@ -327,6 +327,7 @@ ul.main-nav li ul li:hover {
    /* font-size: 1em;
     padding-top: 20px; */
 	padding-right: 20px;
+	margin-bottom: 1.2em;
 }
 
 #content p span  {
