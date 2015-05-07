@@ -582,6 +582,7 @@ div#staff-content {
   min-width: 890px;
   /* overflow: auto; */
   margin-top: 100px;
+  clear: both;
 }
 
 #staff-content ul {
