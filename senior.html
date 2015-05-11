@@ -2,7 +2,9 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Community Action Agency of Siouxland</title>
+  <meta name="description=" content="Community Action Agency of Siouxland Seniors">
+  <!--<meta />  see meta generators when site is up -->
+  <title>CAA Siouxland — Seniors</title>
 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" /><!-- for when this is online -->
   <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -10,29 +12,7 @@
   <link href='http://fonts.googleapis.com/css?family=Prosto+One' rel='stylesheet' type='text/css' />
   
 
-<!--caaSiouxland site 1-->
-
-<style>
-
-
-
-
-
-article#story-intro h4  {
-	margin-bottom: 10px;	
-}
-	
-article#story-intro p { 
-	padding-bottom: 10px;
-}
-
-#story-intro a.button-big {
-}
-
-
-</style>
-
-
+<!--caaSiouxland senior.html-->
 </head>
 
 <body>
@@ -97,54 +77,33 @@ article#story-intro p {
       
     <div id="content">
       <div id="hero-left">
-        <img src="images/s-smiling-senior744.jpg" alt="Fixing a furnace"/>
+        <img src="images/s-smiling-senior744.jpg" alt="Happy senior at work"/>
       </div><!--end of hero-left-->
 
         <article id="hero-right">
           <h3 id="tagline">Senior Community Service Employment Program (SCSEP)</h3>
           <h4>Senior Employment Program</h4>
         
-          <p>SCSEP provides assistance to people age 55 and older who need a job. We provide participants for area nonprofit organizations that agree to provide on-the-job trianing and supervision. The ultimate goaal is finding the participants unsubsidized jobs. In addition to Woodbury County this program also serves Buena Vista, Cherokee, Ida, Lyon, Plymouth, Sioux and Woodbury.</p>
-     
-          
-          
-          
+          <p>SCSEP provides assistance to people age 55 and older who need a job. We provide participants for area nonprofit organizations that agree to provide on-the-job trianing and supervision. The ultimate goaal is finding the participants unsubsidized jobs. In addition to Woodbury County this program also serves Buena Vista, Cherokee, Ida, Lyon, Plymouth, Sioux and Woodbury.</p>   
 
         </article><!--end of hero-right-->
-    </div><!--end of content and in main-->  
+    </div><!--end of content-->  
 
       <div>
         <article id="story-intro">
           <h4>Senior Service America's Senior Community Service Employment Program</h4>
-          <p>Senior Service America's Senior Community Service Employment Program is funded by a grant from the U.S. Department of Labor Employment & Training Administration. SCSEP is an equal opportunity program. <br>For more information:</br></p>
+          <p>Senior Service America's Senior Community Service Employment Program is funded by a grant from the U.S. Department of Labor Employment &amp; Training Administration. <br />
+          SCSEP is an equal opportunity program.<br /> 
+          For more information:</p>
       
-          <a href="http://www.seniorserviceamerica.org" class="button-big">Read More</a>
+          <p><a href="http://www.seniorserviceamerica.org" class="button-big">Read More</a></p>
         </article><!--end of story-intro-->
       </div><!--end of 2nd article area - to frame the slide show in hero part-->
         
 
       <div class="clear"></div>
 
-<!--INTERACTIVE FACT PICTURES-->
-    
-    <!--FOOD-->
-<!--       <div id="pictures">
-        <div id="pic1" class="pic full-page-panel">
-          <div id="spacer1"></div>
-          <div class="fact-text left">
-            <p>The Facts On: </p>
-            <h2>Food &amp; Nutrition</h2>
-            <p>Access to healthy food is the basis for successful living.</p>
-            <h3>50%</h3>
-            <p>Percentage of Woodbury County school children enrolled in the free or reduced lunch program.</p>
-            <h3>19%</h3>
-            <p>Percentage of Iowans recieving Food Assistance from SNAP.</p>
-            <h3>1312</h3>
-            <p>Number of Woodbury County families helped by Community Action with food in 2014</p>
-          </div>
-        </div>
- -->
-      </div><!-- END PICTURES -->
+      </div><!--end of main-->
 
   <footer id="footer">
     <div class="container">
@@ -163,44 +122,6 @@ article#story-intro p {
     </div><!--end of container in footer--> 
     
   </footer><!--end of footer-->
-
-  </div><!--end of main-->
-   
-  <script src="http://code.jquery.com/jquery.js"></script>
-  <script src="js/style.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script>
-           $.stellar({
-
-           });
-
-
-   </script>
-
-    <script>
-$(window).scroll(function(){
-var st = $(this).scrollTop(),
-    winH = $(this).height(),
-    /* you can set this add, 
-    depends on where you want the animation to start
-    for example if the section height is 100 and you set add of 50,
-    that means if 50% of the section is revealed 
-    on the bottom of viewport animate fact-text*/
-    add = 150;
-
-$('.fact-text').each(function(){
-    var pos = $(this).position().top;
-
-    if(st + winH >= pos + add){
-        $(this).stop().animate({opacity:1},'fast');
-    }else{
-        $(this).stop().animate({opacity:0},'fast');
-    }
-});
-});
-  </script>
-
-
 
 </body>
 </html>

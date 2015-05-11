@@ -2,7 +2,8 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Community Action Agency of Siouxland</title>
+  <meta name="description=" content="Community Action Agency of Siouxland Food and Nutrition">
+  <title>CAA Siouxland — Food &amp; Nutrition</title>
 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" /><!-- for when this is online -->
   <link rel="stylesheet" href="css/font-awesome.min.css" />
@@ -94,34 +95,13 @@
           <h4>Want to help?</h4>
           <p>Community Action Agency of Siouxland is a community-focused nonprofit organization.<br />
           Click the button below to find out how.</p>
-          <p>
-          <a href="#" class="button-big">How can I help?</a></p>
+
+          <p><a href="#" class="button-big">How can I help?</a></p>
         </article><!--end of story-intro-->
       </div><!--end of 2nd article area - to frame the slide show in hero part-->
         
-
       <div class="clear"></div>
-
-<!--INTERACTIVE FACT PICTURES-->
-    
-    <!--FOOD-->
-<!--       <div id="pictures">
-        <div id="pic1" class="pic full-page-panel">
-          <div id="spacer1"></div>
-          <div class="fact-text left">
-            <p>The Facts On: </p>
-            <h2>Food &amp; Nutrition</h2>
-            <p>Access to healthy food is the basis for successful living.</p>
-            <h3>50%</h3>
-            <p>Percentage of Woodbury County school children enrolled in the free or reduced lunch program.</p>
-            <h3>19%</h3>
-            <p>Percentage of Iowans recieving Food Assistance from SNAP.</p>
-            <h3>1312</h3>
-            <p>Number of Woodbury County families helped by Community Action with food in 2014</p>
-          </div>
-        </div>
- -->
-      </div><!-- END PICTURES -->
+  </div>  <!--end of main-->
 
   <footer id="footer">
     <div class="container">
@@ -140,43 +120,6 @@
     </div><!--end of container in footer--> 
     
   </footer><!--end of footer-->
-
-  <!--end of main-->
-   
-  <script src="http://code.jquery.com/jquery.js"></script>
-  <script src="js/style.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script>
-           $.stellar({
-
-           });
-
-
-   </script>
-
-    <script>
-$(window).scroll(function(){
-var st = $(this).scrollTop(),
-    winH = $(this).height(),
-    /* you can set this add, 
-    depends on where you want the animation to start
-    for example if the section height is 100 and you set add of 50,
-    that means if 50% of the section is revealed 
-    on the bottom of viewport animate fact-text*/
-    add = 150;
-
-$('.fact-text').each(function(){
-    var pos = $(this).position().top;
-
-    if(st + winH >= pos + add){
-        $(this).stop().animate({opacity:1},'fast');
-    }else{
-        $(this).stop().animate({opacity:0},'fast');
-    }
-});
-});
-  </script>
-
 
 
 </body>

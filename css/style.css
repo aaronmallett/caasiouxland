@@ -64,8 +64,7 @@ body { font-family: Arial, Helvetica, sans-serif;
 		min-width: 1335px;
 } 
 
-#main 	{background: background: #fcfcfc; 
-
+#main 	{background: #fcfcfc; 
 }
 
 ul#social	{
@@ -80,6 +79,7 @@ ul#social	{
 			/*display: block;*/
 			width: 100%;
 			padding-top: 14px;
+
 }
 
 ul#social li {
@@ -95,6 +95,9 @@ ul#social li a  {
 
 #social i.fa   {
 	margin-top: -10px;
+}
+i.fa-twitter-square  {
+	margin-right: 96px;
 }
 
 /*search box in top right corner*/
@@ -144,12 +147,13 @@ form#hdr-search button {
 	margin-top: -55px;
 	width: 100%;
 	position: relative;
+	overflow: visible; /*will this fix the cf-kids page to hold floats?*/
 } 
 
 .container {  
 	width: 85%;  /*1280px*/
 	margin: 0 auto; 
-		 
+	overflow: visible;	 
 }
 
 img#logo {
@@ -280,6 +284,11 @@ ul.main-nav li ul li:hover {
 	clear: both;	
 } 
 
+#content {
+       margin-bottom: 50px;   /*for cf-kids page*/
+       overflow: auto;
+    }
+
 #content #hero-left	{
 	width: 66%;
  	/* height: 450px; */
@@ -291,7 +300,6 @@ ul.main-nav li ul li:hover {
 
 #content #hero-left img	{  /*this works - photo needs to be 100% of the parent container as it sizes down*/
 	width: 100%;
-
 }
 
 #content #hero-right	{
@@ -299,14 +307,24 @@ ul.main-nav li ul li:hover {
 	float: left;
 }
 
-#content h3#tagline	{
+#content.full-text  {
+	padding: 10px 200px 70px 220px;
+}
+
+#content.full-text p {
+	text-indent:30px;	
+}
+
+#content h3#tagline, #staff-content h3#tagline	{
 	 margin-top: 50px;
-	 margin-bottom: 20px;
+	 margin-bottom: 15px;
 	 font-size: 34px;
 	 color: #8C0229;
 	 line-height: 36px;
 }
-
+#content h3.text-center, #staff-content h3.text-center {
+	text-align: center;
+}
 /*#content h2 {
    	font-size: 30px;
     color: #015878;
@@ -315,7 +333,7 @@ ul.main-nav li ul li:hover {
 
 #content h4 {
     font-size: 1.5em;
-    padding-top: 0;
+    padding-top: 10px;
     padding-right: 20px;
     line-height: 1.1em;
     margin-bottom: 0;
@@ -323,7 +341,7 @@ ul.main-nav li ul li:hover {
     font-weight: bold; 
 }
 
-#content p {
+#content p, #content.full-text p {
    /* font-size: 1em;
     padding-top: 20px; */
 	padding-right: 20px;
@@ -354,7 +372,7 @@ article#story-intro h4  {
 
 article#story-intro p  {
 	font-size: 1rem;
-	width: 50%;
+	width: 51%;
 	margin: 0 auto 20px auto;
 }
 
@@ -572,16 +590,27 @@ label {
 	font-size: 1em;
 }
 
+/***************************************
+homelessness.html   styles unique to this page
+***************************************/
+ /* 	#house {
+		padding-top: 60px;
+	}                       keep consistent with other pages*/
+	
+	#collage {
+		width:100%;
+		
+	}
 
 /***************************************
-STAFF.HTML
+staff.html, board.html   styles unique to these pages
 ***************************************/
 
 div#staff-content {
   width: 100%;
   min-width: 890px;
-  /* overflow: auto; */
-  margin-top: 100px;
+  /* overflow: auto; 
+  margin-top: 100px;*/
   clear: both;
 }
 
