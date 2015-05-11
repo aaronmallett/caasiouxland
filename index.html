@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="UTF-8">
+   <meta name="description=" content="Community Action Agency of Siouxland" />
+  <!--<meta />  see meta generators when site is up -->
   <title>Community Action Agency of Siouxland</title>
 
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" /><!-- for when this is online -->
@@ -16,14 +18,10 @@
 <body>
   <div id="main">
     <ul id="social"><!--social icons & holds the gradient at the top-->
-      <li><form role="form" id="hdr-search" method="get" action="/index.php/search/">
-            <input type="text" name="query" placeholder="Search..." class="form-control" required>
-            <button type="submit" value="Search">Search</button>
-          </form>
       <li><a href="#"><i class="fa fa-twitter-square fa-2x"></i></a></li>
       <li><a href="#"><i class="fa fa-facebook-square fa-2x"></i></a></li>
       <li><a href="#">Upcoming Events</a></li>
-      <li><a href="#">Fundraisers</a></li>     
+      <li><a href="#">Fund Raisers</a></li>     
     </ul>
     
     <header id="header">
@@ -34,39 +32,37 @@
           <div><a href="index.html"><img id="logo" src="images/logo.svg" alt="CAA Siouxland logo"/></a></div>
           <ul class="main-nav">
             <li class="dropdown"><a href="#">Who We Are</a>
-			    <ul class="drop-nav">
-			      	<li><a href="#">Our Organization</a></li>
-			      	<li><a href="#">Mission &amp; History</a></li>
-					<li><a href="#">Our Staff</a></li>
-					<li><a href="#">Board of Directors</a></li>
-					<li><a href="#">Employment</a></li>
-					<li><a href="#">Financial Info</a></li>
-			    </ul>
+  			      <ul class="drop-nav">
+  			      	<li><a href="organization.html">Our Organization</a></li>
+      					<li><a href="staff.html">Our Staff</a></li>
+      					<li><a href="board.html">Board of Directors</a></li>
+      					<li><a href="employment.html">Employment</a></li>
+
+  			      </ul>
             </li><!--Note: the ul has to go after the a tag and within this li to be valid and to work.-->
             
             <li class="dropdown"><a href="#">What We Do</a>
             	<ul class="drop-nav">
-  			      	<li><a href="food-bank.html">Food &amp; Nutrition</a> 
+  			      	<li><a href="food-bank.html">Food &amp; Nutrition</a></li> 
   			      			<!-- Note: add a class="flyout-nav if we need another sub menu-->
-  			      	<li><a href="#">Seniors</a></li>
-      					<li><a href="#">Energy Conservation</a></li>
+  			      	<li><a href="senior.html">Seniors</a></li>
+      					<li><a href="energy.html">Energy Conservation</a></li>
       					<li><a href="cf-kids.html">Children &amp; Families</a></li>
-      					<li><a href="#">Homelessness</a></li>
+      					<li><a href="homelessness.html">Homelessness</a></li>
+                <li><a href="other.html">Other Programs</a></li>
   			      </ul>
             </li>
             
             <li class="dropdown"><a href="#">Get Involved</a>
             	<ul class="drop-nav">
-  			      	<li><a href="#">How to Donate</a></li>
-  			      	<li><a href="#">How to Volunteer</a></li>
-      					<li><a href="#">Food Drives</a></li>
-      					<li><a href="#">Adopt-a-Classroom</a></li>
-      					<li><a href="#">Contact Us</a></li>
-      					<li><a href="#">eNews</a></li>
+  			      	<li><a href="donate.html">How to Donate</a></li>
+  			      	<li><a href="volunteer.html">How to Volunteer</a></li>
+      					<li><a href="food-bank.html">Food Drives</a></li>
+      					<li><a href="adopt.html">Adopt-a-Classroom</a></li>
     			    </ul>
             </li>
             
-            <li class="dropdown noTriangle"><a href="#">Contact</a></li>
+            <li class="dropdown noTriangle"><a href="contact.html">Contact</a></li>
             <li class="right-nav"><a href="#" class="button-small">Volunteer</a></li>
             <li class="right-nav"><a href="#" class="button-small">Donate</a></li>
 
@@ -247,3 +243,10 @@ $('.fact-text').each(function(){
 
 </body>
 </html>
+
+
+
+
+</body>
+</html>
+
