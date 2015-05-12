@@ -101,26 +101,26 @@ i.fa-twitter-square  {
 }
 
 /*search box in top right corner*/
-form#hdr-search {
+/*form#hdr-search {
   margin-bottom: 0;
   padding: 0 0 15px 0;
-}
+}*/
 
-ul#social li form input 	{
-	color: #8C0229;    /*or blue #314c66*/
+/*ul#social li form input 	{
+	color: #8C0229;    or blue #314c66
 	padding-top: 7px;
 	margin-top: 5px;
-}
+}*/
 
-input.form-control	{
+/*input.form-control	{
   float: left;
   border-radius: 5px 0 0 5px;
   border-color: rgba(0,0,0,.3);
   border-right: none;
   width: 150px;
-}
+}*/
 
-form#hdr-search button {
+/*form#hdr-search button {
 	border-radius: 0 5px 5px 0;
 	background: #747474;
 	border-color: rgba(0,0,0,.1);
@@ -129,7 +129,7 @@ form#hdr-search button {
 	height: 25px;
 	margin-top: 5px;
 	width: 60px;
-}
+}*/
 
 #header	{
 	width: 100%;
@@ -307,6 +307,11 @@ ul.main-nav li ul li:hover {
 	float: left;
 }
 
+#content #hero-right li {
+      list-style-type: disc;
+      margin-left: 20px;
+}
+
 #content.full-text  {
 	padding: 10px 200px 70px 220px;
 }
@@ -325,11 +330,6 @@ ul.main-nav li ul li:hover {
 #content h3.text-center, #staff-content h3.text-center {
 	text-align: center;
 }
-/*#content h2 {
-   	font-size: 30px;
-    color: #015878;
-	padding-top: 20px; 
-}*/
 
 #content h4 {
     font-size: 1.5em;
@@ -342,8 +342,6 @@ ul.main-nav li ul li:hover {
 }
 
 #content p, #content.full-text p {
-   /* font-size: 1em;
-    padding-top: 20px; */
 	padding-right: 20px;
 	margin-bottom: 1.2em;
 }

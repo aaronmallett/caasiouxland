@@ -10,16 +10,12 @@
   <link href="css/style.css" rel="stylesheet" type="text/css" />
   <link href='http://fonts.googleapis.com/css?family=Prosto+One' rel='stylesheet' type='text/css' />
 
- <style>
-    #content {
-       margin-bottom: 50px;
-       overflow: auto;
-    }
-
-   #content #hero-left {   
-     margin-right: 30px; 
+ <style> /*keep styles her to override style.css*/
+    #content #hero-left {   
+     margin-right: 10px; 
      position: relative;
      padding-bottom: 25px;
+     margin-left: -20px;   /*this overrides the style.css*/
      /*height: auto;
      overflow: visible*/
     }
@@ -53,29 +49,89 @@
       -moz-box-shadow: 7px 9px 23px 2px rgba(173,171,173,1);
       box-shadow: 7px 9px 23px 2px rgba(173,171,173,1);
     }
+    #content #hero-right  {
+      margin-left: -15px;
+      width: 33%;
+    /*  overflow: visible;*/
+    }
 
-   #hero-right li {
+    #content #hero-right li {
       list-style-type: disc;
       margin-left: 20px;
-      /*overflow: auto;*/
-    }
-    #headstart-app   {
-      overflow: visible;
     }
 
-    #headstart-app article {
-      margin-top: 20px;
-      margin-bottom: 35px;
+    /* #hero-right #appointment-form   {
+     overflow: visible;
+      height: auto;
+    }*/
+
+   #appointment-form form  {
+      float: left;
+      width: 430px;
+      border: 1px solid #8C0229;
+      margin-left: -20px;
+      padding: 10px 21px;
     }
 
-     #headstart-app article p {
-      margin-top: 20px;
+   #appointment-form label  {
+      clear: left;
+      float: left;
+      width: 100px;
+      text-align: right;
+      margin-bottom: 5px;
     }
 
-    span.number {
+   #appointment-form input  {
+      float: left;
+      width: 250px;
+      height: 20px;
+      margin-bottom: 5px;
+    }
+
+   #appointment-form textarea  {
+      float: left;
+      width: 250px;
+      margin-bottom: 10px;
+    }
+
+   #appointment-form input.submit-button,
+  #appointment-form input.reset-button  {
+    background: #8C0229;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 5px 5px 5px 5px;
+    height: 20px;
+  }
+
+#appointment-form input.submit-button  {
+    float: right;
+    width:  80px;
+    clear: right;
+    }
+
+   #appointment-form input.reset-button  {
+    float: left;
+    width:  80px;
+    clear: left;
+    }
+
+  
+  /*style the buttons similarly
+  a.button-small  {
+    font-size: 1em;
+    width: 83px;
+    background: #8C0229;
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 0;
+}*/
+
+   span.number {
       font-weight: bold;
       font-size: 1.4em;
       color: #8C0229;
+      text-align: right;
     }
 
   </style>
@@ -132,8 +188,8 @@
             </li>
             
             <li class="dropdown noTriangle"><a href="contact.html">Contact</a></li>
-            <li class="right-nav"><a href="#" class="button-small">Volunteer</a></li>
-            <li class="right-nav"><a href="#" class="button-small">Donate</a></li>
+            <li class="right-nav"><a href="volunteer.html" class="button-small">Volunteer</a></li>
+            <li class="right-nav"><a href="donate.html" class="button-small">Donate</a></li>
 
           </ul>
 
@@ -151,7 +207,8 @@
         <img src="images/cf-family-play-equip-240x360.jpg" alt="baby playing on playground equipment" class="special2" />
       </div><!--end of hero-left-->
 
-        <article id="hero-right">
+      <div id="hero-right"><!-- generic div around all the hero-right -->
+        <article>
           <h3 id="tagline">Children &amp; Families</h3>
           <h4>Early Childhood</h4>
           <p><span>The Head Start program</span> offers comprehensive child development services to Woodbury County three, four and five year olds.  Head Start classrooms in targeted areas of Sioux City serve a diverse population of low income children.  <span>Early Head Start</span> promotes healthy outcomes for pregnant women, enhances the development of young children, ages zero to three, and promotes healthy family functioning.</p>
@@ -165,24 +222,25 @@
             </ul>
           </p>
 
-          </article><!--end of hero-right-->
+        </article><!--end of hero-right-->
       
 
-        <div id="headstart-app"><!-- start form -->
-          <article>
+        <article>
 
           <p>The Community Action Agency of Siouxland is now taking Applications for the 2015-2016 School Year for the Early Head Start and Head Start Preschool Programs.</p>
 
           <p>Please click on this link for more information.<br /> 
-          <a href="http://00353dc.netsolhost.com/documents/early_childhood_brochure_2011.pdf">Early Childhood Brochure 2015-2016</a> </p>
+          <a href="http://00353dc.netsolhost.com/documents/early_childhood_brochure_2011.pdf">Early Childhood Brochure 2015-2016</a> </p> 
+          <p>Do you need to schedule an appointment in your home? <br />
+          Please fill out the form below.</p>
 
-
-<!-- the height of this form makes the donate and volunteer buttons pop out of nav for some reason. -->          
-          
-          <div id="appointment-form">
-            <p>Do you need to schedule an appointment in your home? Please fill out the form below.</p>
-
-          <!--     <form action="mailto:aotto@caasiouxland.org" method="post" enctype="text/plain">
+        </article>
+      
+<!-- height of this form makes the donate and volunteer buttons pop out of nav for some reason. I fixed it by having another div around the right side and closing the main above the button, i think -->          
+          <!-- start form -->
+        <div id="appointment-form">
+         
+          <form action="mailto:aotto@caasiouxland.org" method="post" enctype="text/plain">
 
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" />
@@ -196,31 +254,29 @@
             <label for="dob">Child's DOB:</label>
             <input type="text" name="dob" id="dob" />
 
-            <label for="comments">Comments:</label><br />
-            <textarea name="comments" rows="10" cols="30" id="comments"></textarea>
+            <label for="comments">Comments:</label>
+            <textarea name="comments" rows="5" cols="30" id="comments"></textarea><br>
 
+            <input type="reset" name="reset" value="Clear Form" class="reset-button">
             <input type="submit" name="submit" value="Send" class="submit-button" />
-            <input type="reset" name="reset" value="Clear Form">
 
-            <div style="clear: both;"></div>
-            </form>-->
-            </div>  <!-- end of appointment-form -->
-
-          </article>
-        </div><!-- end of headstart app -->
-    </div><!--end of content--> 
-
-    <div>
-      <article id="story-intro">
-        <h4>Adopt a Classroom</h4>
-        <p>Learn how you can make a difference in a child's life.</p>
-        <p><a href="adopt.html" class="button-big">Adopt Now</a></p>
-      </article><!--end of story-intro-->
-    </div><!--end of button article area-->
-        
+            <!--  <div style="clear: both;"></div> -->
+          </form>
+        </div>  <!-- end of appointment-form -->
+      </div><!-- end of div around hero-right -->
     <div class="clear"></div>
-
-  </div><!--end of main-->
+  
+  </div><!-- end of content -->
+  
+  <div>
+    <article id="story-intro">
+      <h4>Adopt a Classroom</h4>
+      <p>Learn how you can make a difference in a child's life.</p>
+      <p><a href="adopt.html" class="button-big">Adopt Now</a></p>
+    </article><!--end of story-intro-->
+  </div><!--end of button article area-->
+</div><!--end of main-->     
+  <div class="clear"></div>
         
     <footer id="footer">
       <div class="container">
@@ -239,8 +295,6 @@
       </div><!--end of container in footer--> 
       
     </footer><!--end of footer-->
-
-
-   
+ 
 </body>
 </html>
